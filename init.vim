@@ -122,6 +122,13 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 " :Gblame - shows on what commit every line was changed 
 " % - is the current file 
 
+
+" vim-terraform
+" Terraform highlighting
+Plug 'https://github.com/hashivim/vim-terraform.git'
+let g:terraform_align=1
+let g:terraform_fold_sections=1
+
 " Python specific Jedi
 Plug 'git@github.com:davidhalter/jedi-vim.git'
 
