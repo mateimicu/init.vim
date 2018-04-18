@@ -68,7 +68,7 @@ nmap <F8> :TagbarToggle<CR>
 
 " Ctrl-p
 " Fuzzy finder 
-Plug 'git@github.com:ctrlpvim/ctrlp.vim.git'
+Plug 'https://github.com/kien/ctrlp.vim.git'
 
 " Tab Management
 " :TabooReame < renames a tab
