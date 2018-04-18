@@ -125,9 +125,9 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 
 " vim-terraform
 " Terraform highlighting
-Plug 'https://github.com/hashivim/vim-terraform.git'
-let g:terraform_align=1
-let g:terraform_fold_sections=1
+Plug 'hashivim/vim-terraform'
+Plug 'vim-syntastic/syntastic'
+Plug 'juliosueiras/vim-terraform-completion'
 
 " Python specific Jedi
 Plug 'git@github.com:davidhalter/jedi-vim.git'
