@@ -1,4 +1,7 @@
 " vim-plug plugin mentru manageriatul pluginurilor 
+set nocompatible
+syntax on
+filetype plugin indent on
 call plug#begin('~/.nvim/plugged')
 
 " Color Schemes
@@ -128,9 +131,24 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'hashivim/vim-terraform'
 Plug 'vim-syntastic/syntastic'
 Plug 'juliosueiras/vim-terraform-completion'
+" Syntastic Config
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" (Optional) Enable terraform plan to be include in filter
+let g:syntastic_terraform_tffilter_plan = 1
+
+" (Optional) Default: 0, enable(1)/disable(0) plugin's keymapping
+let g:terraform_completion_keys = 1
 
 " Python specific Jedi
-Plug 'git@github.com:davidhalter/jedi-vim.git'
+Plug 'https://github.com/davidhalter/jedi-vim.git'
 
 call plug#end()
 
